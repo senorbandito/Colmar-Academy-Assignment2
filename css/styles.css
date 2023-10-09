@@ -71,19 +71,24 @@ nav{
         display: flex;
     }
 
+    main{
+        padding-top: 64px;
+        width: 100%;
+    }
+
+    .topbanner{
+        display: flex;
+    }
+
     .topbanner img{
         width: 60%;
-        padding: 32px 24px 32px 24px; /* top right bottom left */
+        margin: 32px 24px 32px 24px; /* top right bottom left */
     }
 
     .topbanner_text{
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
-
-    .topbanner_text h1{
-        font-size: xx-large;
     }
 
     .topbanner_text h2{
@@ -95,12 +100,61 @@ nav{
         color: white;
         padding: 8px 0px 8px 0px;  /*top right bottom left*/
         width: 90%;
-        height: 10%;
-        font-size: large;
+        height: 5%;
+        box-sizing: content-box;
+        font-size: medium;
+        border: none;
     }
 
     /* midbanner */
 
+    .midbanner {
+        color: rgb(0, 0, 0, 0.6);
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .midbanner_left {
+        width: 60%;
+        max-width: 60%;
+        display: inline-block;
+        padding: 32px 0px 32px 24px; /* top right bottom left*/
+    }
+
+    .midbanner img{
+        max-width: 100%;
+    }
+    
+    .midbanner_right {
+        width: 40%;
+        max-width: 35%;
+        display: inline-block;
+        border-left: 1px solid rgb(0, 0, 0, 0.2);
+    }
+
+    .orientation, .campus, .guest{
+        display: flex;
+        word-break: break-all;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .orientation:hover, .campus:hover, .guest:hover{
+        background-color: rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+
+    .orientation img, .campus img, .guest img{
+        max-width: 35%;
+        max-height: auto;
+        object-fit: cover;
+        padding: 16px;
+    }
+
+    .readmore{
+        color: rgba(27, 3, 104, 0.7);
+    }
     /* bottom banner */
 
 /* main section - END */
